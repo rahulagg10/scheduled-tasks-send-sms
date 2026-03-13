@@ -26,20 +26,20 @@ jobs:
           ACCOUNT_SID: ${{ secrets.ACCOUNT_SID }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: |
-          if [ -z "$MY_EMAIL" ]; then
-            echo "MY_EMAIL secret is not set!"
+          if [ -z "$ACCOUNT_SID" ]; then
+            echo "ACCOUNT_SID secret is not set!"
             echo "Go to Settings > Secrets > Actions and add it."
             exit 1
           else
-            echo "MY_EMAIL is configured"
+            echo "ACCOUNT_SID is configured"
           fi
 
-          if [ -z "$MY_PASSWORD" ]; then
-            echo "MY_PASSWORD secret is not set!"
+          if [ -z "$AUTH_TOKEN" ]; then
+            echo "AUTH_TOKEN secret is not set!"
             echo "Go to Settings > Secrets > Actions and add it."
             exit 1
           else
-            echo "MY_PASSWORD is configured"
+            echo "AUTH_TOKEN is configured"
           fi
 
           echo ""
