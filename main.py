@@ -8,10 +8,10 @@ account_sid = "ACdbf284cd6bb78d55287ddd29654f9b1e"
 auth_token = "6767cd1f751b77350fc1cd18a654d404"
 client = Client(account_sid, auth_token)
 
-message = client.messages.create(
-    body="Aaj Night ka kya plan h?",
-    from_="+16562263135",
-    to="+918800149444",
-)
-
-print(message.body)
+# message = client.messages.create(
+#     body="Aaj Night ka kya plan h?",
+#     from_="+16562263135",
+#     to="+918800149444",
+# )
+print(client.api.accounts(account_sid).fetch().friendly_name)
+# print(message.body)
