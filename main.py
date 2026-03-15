@@ -4,8 +4,8 @@ from twilio.rest import Client
 
 # Find your Account SID and Auth Token at twilio.com/console
 # and set the environment variables. See http://twil.io/secure
-account_sid = "ACdbf284cd6bb78d55287ddd29654f9b1e"
-auth_token = "f3780a425707dc84bff691b51a009909"
+account_sid = ""
+auth_token = ""
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
