@@ -9,7 +9,7 @@ auth_token = ""
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
-    body="Aaj Night ka kya plan h?",
+    body="Hello, How are you?",
     from_="+16562263135",
     to="+918800149444",
 )
